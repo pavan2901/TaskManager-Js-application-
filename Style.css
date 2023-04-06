@@ -1,0 +1,43 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: inline-block;
+  width: 100px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+  width: 200px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+li.completed {
+  background-color: #cfc;
+}
+
+li.pending {
+  background-color: #ffc;
+}
