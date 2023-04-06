@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager</h1>
+    <form>
+      <label for="user-name">User name:</label>
+      <input type="text" id="user-name" name="user-name" required>
+      <button type="button" onclick="addUser()">Add User</button>
+    </form>
+
+    <form>
+      <label for="task-name">Task name:</label>
+      <input type="text" id="task-name" name="task-name" required>
+      <label for="due-date">Due date:</label>
+      <input type="date" id="due-date" name="due-date" required>
+      <label for="status">Status:</label>
+      <select id="status" name="status">
+        <option value="Pending" selected>Pending</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <button type="button" onclick="createTask()">Create Task</button>
+    </form>
+
+    <form>
+      <label for="filter-name">Filter by task name:</label>
+      <input type="text" id="filter-name" name="filter-name">
+      <button type="button" onclick="filterTasks()">Filter</button>
+    </form>
+
+    <form>
+      <label for="filter-status">Filter by status:</label>
+      <select id="filter-status" name="filter-status">
+        <option value="">All</option>
+        <option value="Pending">Pending</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <button type="button" onclick="filterTasks()">Filter</button>
+    </form>
+
+    <form>
+      <label for="filter-due-date">Filter by due date:</label>
+      <input type="date" id="filter-due-date" name="filter-due-date">
+      <button type="button" onclick="filterTasks()">Filter</button>
+    </form>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
